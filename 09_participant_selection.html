@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/mainLogo.css?v=881955e4" />
+    <link rel="stylesheet" type="text/css" href="_static/css/mainLogo.css?v=3ff1ef93" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -59,7 +59,8 @@
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = '09_participant_selection';</script>
-    <script src="_static/logo-switcher.js?v=660c35f2"></script>
+    <script src="_static/js/footer.js?v=e6eb5a62"></script>
+    <script src="_static/js/logo-switcher.js?v=845a2533"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Event Registration" href="10_event_registration.html" />
@@ -194,6 +195,7 @@
 <li class="toctree-l1"><a class="reference internal" href="10_event_registration.html">Event Registration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="11_inclusive_practices_during_checkin.html">Inclusive practices during check-in</a></li>
 <li class="toctree-l1"><a class="reference internal" href="12_assessment.html">Assessment of the event</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13_inclusive-checklist.html">Inclusivity Checklist</a></li>
 <li class="toctree-l1"><a class="reference internal" href="14_how_to_contribute.html">Contributing</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="_tags/tagsindex.html">Tags overview</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="_tags/bathrooms.html">Bathrooms (1)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -588,7 +590,7 @@ document.write(`
 <ul>
 <li><p>Take extra steps to ensure a diverse speaker pool</p>
 <ul>
-<li><p>Make the list of potential speakers who are underrepresented longer than list of usual suspects (e.g. — have a longer list of women than men), so when someone declines or drops out you can just move to the next one on the list. Underrepresented folks are often overburdened with speaking requests, hence the need for a longer list.</p></li>
+<li><p>Make the list of potential speakers who are underrepresented longer than the list of usual suspects (e.g. — have a longer list of women than men), so when someone declines or drops out you can just move to the next one on the list. Underrepresented folks are often overburdened with speaking requests, hence the need for a longer list.</p></li>
 </ul>
 </li>
 <li><p>Keep and maintain a list of possible speakers with expertise and their contact info</p></li>
@@ -683,14 +685,19 @@ document.write(`
 <ul>
 <li><p>By changing speaker selection to completely “blind,” you may be able to increase representation from traditionally underrepresented groups. (See “Further Reading” below.)</p></li>
 <li><p>You might create a CFP form that instructs the submitter to withhold identifying information.</p></li>
-<li><p>You can assign 1-2 people to remove the identifying information from submissions before passing them to the next group of reviewers/the assessing team.</p></li>
-<li><p>If you recognize a submission author and you’re on the review committee, you should not grade the submission—recuse yourself from reviewing that submission.</p></li>
+<li><p>You can assign 1-2 people to remove the identifying information from submissions before passing them to the next group of reviewers/the assessing team.</p>
+<ul>
+<li><p>However, be aware that it’s not always possible to do this, particularly if the work is tightly tied to the authors, or is based on their past work, and that reviewers can often determine authors even when they technically shouldn’t. Reviewers may also search for information about the subject of the work, which can lead them to a preprint of the submitted material with the authors listed. In this case, you may want to explicitly instruct the reviewers to try not to consider information about the authors they happen to know or find.</p></li>
+</ul>
+</li>
+<li><p>If you recognize a submission author and you’re on the review committee, you should not grade the submission—recuse yourself from reviewing that submission. Of course, if the process is double-blind, you may not be aware that you have a conflict with it.</p></li>
 <li><p>Optionally, the review team can de-anonymize after the review process to ensure that the final selection is representative of the diverse grouping that is desired.</p></li>
 </ul>
 </li>
 <li><p><strong>Double Open Review</strong></p>
 <ul>
-<li><p>Reviewers know who the proposal authors are and proposal authors know who the reviewers are</p></li>
+<li><p>Reviewers know who the proposal authors are and proposal authors know who the reviewers are.</p></li>
+<li><p>Some believe that open reviews are higher quality than anonymous reviewers, as the reviewers have to stand behind their comments.</p></li>
 <li><p><a class="reference external" href="https://www.scipy2022.scipy.org/chair-reviewer-guidelines">Sample guidelines for reviewers in double open review systems</a></p></li>
 </ul>
 </li>
@@ -703,11 +710,11 @@ document.write(`
 <li><p><a class="reference external" href="https://www.elsevier.com/reviewers-update/story/innovation-in-publishing/is-open-peer-review-the-way-forward">Is open peer review the way forward?</a></p></li>
 <li><p><a class="reference external" href="http://www.nature.com/news/gender-bias-distorts-peer-review-across-fields-1.21685">Gender bias distorts peer review across fields</a></p></li>
 <li><p><a class="reference external" href="https://www.numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science/">How rOpenSci uses Open Code Review to Promote Reproducible Science</a></p></li>
-<li><p><a class="reference external" href="https://www.techdoneright.io/9">Conference Speaking and Diverse Perspectives with Carina C. Zona and Mark Yoon</a>
-Encourage double-blind reviewing processes.</p></li>
+<li><p><a class="reference external" href="https://www.techdoneright.io/9">Conference Speaking and Diverse Perspectives with Carina C. Zona and Mark Yoon</a></p></li>
 <li><p><a class="reference external" href="http://www.cs.utexas.edu/users/mckinley/notes/blind.html">More on Improving Reviewing Quality with Double-Blind Reviewing, External Review Committees, Author Response, and in Person Program Committee Meetings</a></p></li>
 <li><p><a class="reference external" href="https://arxiv.org/abs/1702.00502">Single versus Double blind reviewing at WSDM 2017</a></p></li>
 <li><p>[Effectiveness of Anonymization in Double-Blind Review] (<a class="reference external" href="https://arxiv.org/abs/1709.01609">https://arxiv.org/abs/1709.01609</a>)</p></li>
+<li><p><a class="reference external" href="https://doi.org/10.12688/f1000research.12037.3">A multi-disciplinary perspective on emergent and future innovations in peer review</a></p></li>
 </ul>
 </section>
 </section>
